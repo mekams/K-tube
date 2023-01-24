@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack } from "@mui/material";
 import { Link } from "react-router-dom";
-import Searchbar from "./SearchBar";
+import Searchbar from "./SearchBar";                  //importing component on which this interface code dependent
 
 import logo from "../exported_utils/youtube.png";   //logo
 
@@ -23,6 +23,8 @@ const Navbar = () => {
       <Link to="/" style={{ display: "flex", aligntems: "center" }}>
         <img src={logo} alt="logo" height={45}></img>
       </Link>
+
+      {/* SearchBar components is split */}
       <Searchbar/>
     </Stack>
   );

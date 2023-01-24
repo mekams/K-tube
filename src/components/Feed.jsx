@@ -1,5 +1,6 @@
 import { Stack, Typography, Box } from "@mui/material";
 import { useState, useEffect } from "react";
+import SideBar from "./SideBar";                      //importing component on which this interface code dependent
 
 const Feed = () => {
   return (
@@ -12,7 +13,17 @@ const Feed = () => {
           px: { sx: 0, md: 2 },
         }}
       >
-        Sidebar
+        {/* sidebar components is split */}
+        <SideBar />
+        
+        {/* //standardized the text and its related CSS properties without worrying about browser compatibility issues */}
+        <Typography
+          claasName="copyright"
+          variant="body2"
+          sx={{ mt: 1.5, color: "#fff" }}
+        >
+          &#60; / &#62;❤️ Kamran Mustafa &copy; copyright 2022-23😃
+        </Typography>
       </Box>
     </Stack>
   );
