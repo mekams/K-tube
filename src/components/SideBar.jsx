@@ -4,7 +4,7 @@ import { Stack } from "@mui/material";
 //imported categories for youtube sidebar
 import { categories } from "../utility/constants";
 
-const Categories = ({ selectedCategory, setSelectedCategory }) => (
+const Sidebar = ({ selectedCategory, setSelectedCategory }) => (
   // stack direction is columnn by default but set to row for small devices like smartphones
   <Stack
     direction="row"
@@ -45,4 +45,4 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
   </Stack>
 );
 
-export default Categories;
+export default Sidebar;
