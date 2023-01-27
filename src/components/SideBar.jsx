@@ -1,13 +1,13 @@
 import { Stack } from "@mui/material";
 import { categories } from "../exported_utils/constants"; //imported categories for youtube sidebar
 
-const selectedCategory = "New"; //can also define same in betwwen line18 and 19
+// const selectedCategory = "New"; //can also define same in betwwen line18 and 19
 
-const SideBar = () => {
+const SideBar = ({selectedCategory,setSelectedCategory}) => {
   return (
-    // Flex of sidebar is created , direction is row by default and changes in medium devices to column
+    // stack direction is columnn by default but set to row for small devices like smartphones
     <Stack
-      direction="row"
+      direction="row"    
       sx={{
         overflowY: "auto",
         height: { sx: "auto", md: "95%" },
@@ -19,12 +19,13 @@ const SideBar = () => {
         return (
           <button
             className="category-btn"
+            onClick={()=> setSelectedCategory(category.name)}
             style={{
               background: category.name === selectedCategory && "#Fc1503",
               color: "white",
             }}
             //Each property requires a key whenever using map in react----------- contd...further
-            key={category.name}
+            // key={category.name}
           >
             <span
               style={{
