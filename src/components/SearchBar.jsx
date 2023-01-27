@@ -34,6 +34,7 @@ const SearchBar = () => {
       }}
     >
       <input
+      style={{backgroundColor:'none'}}
         //search bar
         className="search-bar"
         placeholder="Search..."
