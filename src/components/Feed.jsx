@@ -1,24 +1,26 @@
-import { Stack, Typography, Box } from "@mui/material";
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { Box, Stack, Typography } from "@mui/material";
 
-import { fetchFromAPI } from "../exported_utils/fetchFromAPI";
+import { fetchFromAPI } from "../utility/fetchFromAPI";
 
 //importing component on which this interface code dependent
-import { SideBar, Videos } from "./";
+import { Videos, Sidebar } from "./";
 
 const Feed = () => {
-  const [selectedCategory, setSelectedCategory] = useState("New"); //dynamic change of sidebar buttons on click
-  const [videos, setVideos] = useState([]);
+  //dynamic change of sidebar buttons on click
+  const [selectedCategory, setSelectedCategory] = useState("New");
+  const [videos, setVideos] = useState(null);
 
   // Fetch the api_data right after component renders initially  & dependency array manages to re-renders when categories interchanged
+
   useEffect(() => {
+    setVideos(null);
+
     //api has base_url+ search query : Whenever user changes categories it got search by line 16 ${selectedCategory}
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
       //promise returning data as it's async
-      .then((data) => {
-        // console.log(data); //analyse api data received
-        setVideos(data.items);
-      });
+      .then((data) => setVideos(data.items));
+    // console.log(data); //analyse api data received
   }, [selectedCategory]);
 
   return (
@@ -32,8 +34,7 @@ const Feed = () => {
         }}
       >
         {/* sidebar components is split */}
-        <SideBar
-          // passing the states to sidebar component as props.
+        <Sidebar
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
@@ -48,15 +49,14 @@ const Feed = () => {
         </Typography>
       </Box>
 
-      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: "1" }}>
+      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
         <Typography
           variant="h4"
           fontWeight="bold"
           mb={2}
           sx={{ color: "white" }}
         >
-          {selectedCategory}
-          <span style={{ color: "#F31503" }}> Videos </span>
+          {selectedCategory} <span style={{ color: "#FC1503" }}>videos</span>
         </Typography>
 
         {/* Videos components is split */}
