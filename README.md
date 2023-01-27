@@ -8,8 +8,10 @@
 
 # -Used: 
  *-routing-DOM*
- *-RAPID API**         --- youtube v3
- *Material UI 5*    --stack, box, spinner , icons, styles and  font, sx props , layouts etc.
+ *-RAPID API*
+  --- youtube v3
+ *Material UI 5*
+ -stack, box, spinner , icons, styles and  font, sx props , layouts etc.
  *.env*
  *Axios*
 *React Player*
