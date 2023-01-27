@@ -1,7 +1,7 @@
 # Introduction
 * This is a youtube clone which fetch the data using rapid API and only has basic version so limited API calls only (500/day).
 * It has been divided in to 4 components and their sub components.
-* Props drilling has been done in this project but for better improovement we can use context API or redux if adding more child compinents in future.
+* Props drilling has been done in this project but for better improvement we can use context API or redux if adding more child components in future.
 
 **I started from making the Navbar >SearchBar >SideBar >Feed > Videos > VideoCard >ChannelCard >ChannelDetail >VideoDetail >Loader**
 ## * -Functionalities added after making some components > retrieving again > adding funct.. > again retrieving
