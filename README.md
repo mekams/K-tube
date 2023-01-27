@@ -18,4 +18,19 @@
 ## -Demo 
 
 *I think theory for demo not required because we all know youtube 😂 ---it's similar to that*
+## -Main Page
+<img width="1115" alt="image" src="https://user-images.githubusercontent.com/100461901/215223285-a3e869b5-ec62-43eb-88c3-cf02ae937e10.png">
+
+## -Getting Channel & related videos
+<img width="1117" alt="image" src="https://user-images.githubusercontent.com/100461901/215223528-d6508b69-53bc-4ba8-831a-b8327069cc5c.png">
+
+## -getting subscribers
+<img width="1111" alt="image" src="https://user-images.githubusercontent.com/100461901/215223726-66c91dcc-0a3f-4fcd-9371-511765b562be.png">
+
+## -playing  the video using react player
+<img width="1120" alt="image" src="https://user-images.githubusercontent.com/100461901/215224062-0cf24528-0cad-4642-8a14-aaef73d1680a.png">
+
+
+# - * Live Link * -
+** https://k-tube.netlify.app/ **
 
