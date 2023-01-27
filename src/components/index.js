@@ -19,7 +19,7 @@ export { default as Sidebar } from './Sidebar';
 //  export { default as SearchFeed } from './SearchFeed';                       //split 8
 //  export { default as VideoDetail } from './VideoDetail';                     //split 12
 //  export { default as SearchBar} from './SearchBar';                      //split------3
-//  export { default as SideBar} from './SideBar';                       //split------4
+//  export { default as Sidebar} from './Sidebar';                       //split------4
 //  export { default as Videos} from './Videos';                        //split------5
 //  export { default as ChannelCard} from './ChannelCard';           //split------6
 //  export { default as VideoCard} from './VideoCard';              //split------10
