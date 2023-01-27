@@ -7,15 +7,13 @@
 ## -Functionalities added after making some components > retrieving > again adding funct.. >retrieving
 
 # -Used: 
- *-routing-DOM*
- *-RAPID API*
-  --- youtube v3
- *Material UI 5*
- -stack, box, spinner , icons, styles and  font, sx props , layouts etc.
- *.env*
- *Axios*
-*React Player*
-*Little Vanilla CSS*
+* -routing-DOM *
+* -RAPID API --- youtube v3 *
+* -Material UI 5 -stack, box, spinner , icons, styles and  font, sx props , layouts etc. *
+* -.env *
+* -Axios *
+*  -React Player *
+* -Little Vanilla CSS *
 
 ## -Demo 
 
