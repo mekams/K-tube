@@ -4,7 +4,7 @@
 * Props drilling has been done in this project but for better improovement we can use context API or redux if adding more child compinents in future.
 
 **I started from making the Navbar >SearchBar >SideBar >Feed > Videos > VideoCard >ChannelCard >ChannelDetail >VideoDetail >Loader**
-## -Functionalities added after making some components > retrieving > again adding funct.. >retrieving
+## * -Functionalities added after making some components > retrieving again > adding funct.. > again retrieving
 
 # -Used: 
 * -routing-DOM *
