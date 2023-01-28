@@ -1,4 +1,4 @@
-import { Stack, Box, responsiveFontSizes } from "@mui/material";
+import { Stack, Box } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import logo from "../utility/youtube.png";
